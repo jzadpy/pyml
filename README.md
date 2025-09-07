@@ -21,7 +21,7 @@ PyML es un **transpilador** que permite escribir código Python usando una sinta
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/pyml.git
+git clone https://github.com/zadkiel123AA/pyml.git
 cd pyml
 
 # ¡Listo para usar!
@@ -198,4 +198,4 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 
 **¿Te gusta PyML?** ¡Dale una ⭐ al repositorio!
 
-*PyML - Donde Python meets YAML*
+*PyML - Make it easier*
