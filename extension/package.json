@@ -1,0 +1,30 @@
+{
+  "name": "pyml-language-support",
+  "displayName": "PyML Language Support",
+  "description": "Syntax highlighting for PyML files",
+  "version": "1.0.0",
+  "publisher": "jzadk",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "pyml",
+        "aliases": ["PyML", "pyml"],
+        "extensions": [".pyml"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "pyml",
+        "scopeName": "source.pyml",
+        "path": "./syntaxes/pyml.tmLanguage.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "PyML",
+  "scopeName": "source.pyml",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#packages"
+    },
+    {
+      "include": "#functions"
+    },
+    {
+      "include": "#control-flow"
+    },
+    {
+      "include": "#print-statements"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#variables"
+    },
+    {
+      "include": "#yaml-keys"
+    },
+    {
+      "include": "#list-items"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "name": "comment.line.number-sign.pyml",
+      "match": "#.*$"
+    },
+    "packages": {
+      "patterns": [
+        {
+          "name": "keyword.other.packages.pyml",
+          "match": "^\\s*packages\\s*:"
+        },
+        {
+          "name": "entity.name.type.module.pyml",
+          "match": "^\\s*-\\s*([\\w\\.]+)",
+          "captures": {
+            "1": {
+              "name": "entity.name.type.module.pyml"
+            }
+          }
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "meta.function.pyml",
+          "match": "^\\s*(function)\\s+(\\w+)\\s+(define)\\s+([\\w_,\\s]+)\\s*:",
+          "captures": {
+            "1": {
+              "name": "keyword.control.function.pyml"
+            },
+            "2": {
+              "name": "entity.name.function.pyml"
+            },
+            "3": {
+              "name": "keyword.control.define.pyml"
+            },
+            "4": {
+              "name": "variable.parameter.pyml"
+            }
+          }
+        },
+        {
+          "name": "meta.function-call.pyml",
+          "match": "^\\s*(\\w+)\\s*;",
+          "captures": {
+            "1": {
+              "name": "entity.name.function.pyml"
+            }
+          }
+        },
+        {
+          "name": "meta.function-call-with-args.pyml",
+          "match": "^\\s*(\\w+)\\s*:\\s*(.+)",
+          "captures": {
+            "1": {
+              "name": "entity.name.function.pyml"
+            },
+            "2": {
+              "name": "variable.other.pyml"
+            }
+          }
+        }
+      ]
+    },
+    "control-flow": {
+      "patterns": [
+        {
+          "name": "keyword.control.conditional.pyml",
+          "match": "\\b(if|elif|else)\\b"
+        },
+        {
+          "name": "keyword.control.loop.pyml",
+          "match": "\\b(for|while)\\b"
+        },
+        {
+          "name": "keyword.other.range.pyml",
+          "match": "\\brange\\b"
+        },
+        {
+          "name": "keyword.operator.logical.pyml",
+          "match": "\\b(in|and|or|not)\\b"
+        }
+      ]
+    },
+    "print-statements": {
+      "name": "meta.print.pyml",
+      "match": "^\\s*(print)\\s*:\\s*(.+)?",
+      "captures": {
+        "1": {
+          "name": "keyword.other.print.pyml"
+        },
+        "2": {
+          "patterns": [
+            {
+              "include": "#strings"
+            },
+            {
+              "include": "#variables"
+            }
+          ]
+        }
+      }
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.pyml",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.pyml",
+              "match": "\\\\."
+            },
+            {
+              "name": "constant.other.placeholder.pyml",
+              "match": "\\{[^}]*\\}"
+            }
+          ]
+        },
+        {
+          "name": "string.quoted.single.pyml",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            {
+              "name": "constant.character.escape.pyml",
+              "match": "\\\\."
+            },
+            {
+              "name": "constant.other.placeholder.pyml",
+              "match": "\\{[^}]*\\}"
+            }
+          ]
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.float.pyml",
+          "match": "\\b\\d+\\.\\d+\\b"
+        },
+        {
+          "name": "constant.numeric.integer.pyml",
+          "match": "\\b\\d+\\b"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.arithmetic.pyml",
+          "match": "\\+|\\-|\\*|/|//|%|\\*\\*"
+        },
+        {
+          "name": "keyword.operator.comparison.pyml",
+          "match": "==|!=|<|>|<=|>="
+        },
+        {
+          "name": "keyword.operator.assignment.pyml",
+          "match": "="
+        }
+      ]
+    },
+    "variables": {
+      "name": "variable.other.pyml",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+    },
+    "yaml-keys": {
+      "name": "entity.name.tag.yaml.pyml",
+      "match": "^\\s*([\\w_]+)\\s*:",
+      "captures": {
+        "1": {
+          "name": "entity.name.tag.yaml.pyml"
+        }
+      }
+    },
+    "list-items": {
+      "name": "punctuation.definition.list.begin.pyml",
+      "match": "^\\s*-\\s*"
+    }
+  }
+}

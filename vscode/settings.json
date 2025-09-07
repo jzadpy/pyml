@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "*.pyml": "shellscript"
+  },
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/pyml_temp.py": true,
+    "venv/": true
+  },
+  "python.defaultInterpreterPath": ".\\venv\\Scripts\\python.exe"
+}
