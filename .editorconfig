@@ -1,0 +1,5 @@
+root = true
+
+[*.pyml]
+# VS Code specific
+vscode_file_association = shellscript
