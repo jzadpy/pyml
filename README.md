@@ -166,6 +166,11 @@ python src/pyml_runner.py archivo.pyml
 | Range loop | `for i in range.1.10.2:` | `for i in range(1, 10, 2):` |
 | Import con alias | `packages:\n  - time.sleep` | `import time as sleep` |
 
+## ⚡Rapidez
+Pyml cuenta con una optimización increible que en algunos casos puede llegar
+a ser mas rapida que Python. Aquí hay una grafica para comparar los dos lenguajes:
+<img width="4464" height="2363" alt="benchmark_pyml_fast_vs_python" src="https://github.com/user-attachments/assets/44f4e311-50fd-4d33-b314-d585cb593e9b" />
+
 ## 🎯 Casos de uso
 
 - **📚 Educación**: Sintaxis más accesible para principiantes
