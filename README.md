@@ -171,6 +171,12 @@ Pyml cuenta con una optimización increible que en algunos casos puede llegar
 a ser mas rapida que Python. Aquí hay una grafica para comparar los dos lenguajes:
 <img width="4464" height="2363" alt="benchmark_pyml_fast_vs_python" src="https://github.com/user-attachments/assets/44f4e311-50fd-4d33-b314-d585cb593e9b" />
 
+Y aquí hay una tabla para comparar la rapidez de cada lenguaje:
+
+<img width="698" height="535" alt="image" src="https://github.com/user-attachments/assets/619e79ad-4908-489a-aaf0-27eb9be42e34" />
+
+
+
 ## 🎯 Casos de uso
 
 - **📚 Educación**: Sintaxis más accesible para principiantes
