@@ -390,7 +390,8 @@ def run_pyml_optimized(file_path):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Uso: python pyml_runner.py <archivo.pyml>")
+        print("Uso: src/python pyml.py <archivo.pyml>")
+        print("Para Linux: src/python.linux.py  <archivo.pyml>")
         sys.exit(1)
     run_pyml_optimized(sys.argv[1])
 
