@@ -21,7 +21,7 @@ PyML es un **transpilador** que permite escribir código Python usando una sinta
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/zadkiel123AA/pyml.git
+git clone https://github.com/jzadpy/pyml.git
 cd pyml
 
 # ¡Listo para usar!
@@ -146,7 +146,8 @@ coordinates: {'x': 10, 'y': 20}
 
 ### Ejecutar archivos PyML
 ```bash
-python src/pyml_runner.py archivo.pyml
+python src/pyml.py archivo.pyml
+python src/pyml.linux.py archivo.pyml #(para linux)
 ```
 
 ### Instalar extensión de VS Code
