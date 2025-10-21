@@ -25,4 +25,8 @@ env/
 Thumbs.db
 
 # Logs
+
 *.log
+
+#Github
+gitex.py
