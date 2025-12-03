@@ -147,7 +147,7 @@ coordinates: {'x': 10, 'y': 20}
 ### Ejecutar archivos PyML
 ```bash
 python src/pyml.py archivo.pyml
-python src/pyml.linux.py archivo.pyml #(para linux)
+(Unificamos linux y windows!)
 ```
 
 ### Instalar extensión de VS Code
@@ -166,16 +166,6 @@ python src/pyml.linux.py archivo.pyml #(para linux)
 | Print con f-string | `print: "Hola {name}"` | `print(f"Hola {name}")` |
 | Range loop | `for i in range.1.10.2:` | `for i in range(1, 10, 2):` |
 | Import con alias | `packages:\n  - time.sleep` | `import time as sleep` |
-
-## ⚡Rapidez
-Pyml cuenta con una optimización increible que en algunos casos puede llegar
-a ser mas rapida que Python. Aquí hay una grafica para comparar los dos lenguajes:
-<img width="4464" height="2363" alt="benchmark_pyml_fast_vs_python" src="https://github.com/user-attachments/assets/44f4e311-50fd-4d33-b314-d585cb593e9b" />
-
-Y aquí hay una tabla para comparar la rapidez de cada lenguaje:
-
-<img width="698" height="535" alt="image" src="https://github.com/user-attachments/assets/619e79ad-4908-489a-aaf0-27eb9be42e34" />
-
 
 
 ## 🎯 Casos de uso
@@ -206,10 +196,6 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 - Powered by **Python**
 - Construido con ❤️ para la comunidad de desarrolladores
 
-
-## INFO
-
-Serpx.spx
 ---
 
 **¿Te gusta PyML?** ¡Dale una ⭐ al repositorio!
