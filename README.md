@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/python-3.6+-blue.svg)](https://python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code Style: YAML-like](https://img.shields.io/badge/syntax-YAML--like-green.svg)](https://yaml.org/)
-[![Status](https://img.shields.io/badge/status--deprecated-red.svg)](https://github.com/jzadpy/)
+[![Status](https://img.shields.io/badge/status-deprecated-red.svg)](https://github.com/jzadpy/)
 PyML es un **transpilador** que permite escribir código Python usando una sintaxis inspirada en YAML. Combina la potencia de Python con la simplicidad y legibilidad de YAML, creando una experiencia de programación más limpia y accesible.
 
 ## ✨ Características
